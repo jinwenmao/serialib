@@ -17,7 +17,7 @@ void sss_init(sss **s, char* name, int id)
 int main(void)
 {
 	serial *s;
-	if (serial_open(&s, "/dev/ttyUSB1", 115200) == 0){
+	if (serial_open(&s, "/dev/ttyS0", 115200) == 0){
 		printf("Port opened.\n");
 
 	} else {
